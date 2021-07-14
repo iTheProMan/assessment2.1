@@ -1,0 +1,340 @@
+/* ---------------------------
+imports
+--------------------------- */
+/* ----Font-Immort------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* ----------------------------------------------------------- */
+
+/* ---------------------------
+body
+--------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 1);
+}
+p {
+  text-align: justify;
+}
+/* ---------------------------
+header
+--------------------------- */
+header {
+  background-color: rgba(45, 37, 160, 1);
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 100px;
+  width: fit-content;
+  padding: 0;
+}
+.head-div1 img {
+  width: 550.01px;
+  height: 438px;
+}
+.head-div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 8%;
+}
+.head-margin1:hover {
+  cursor: grab;
+}
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+}
+.watch-now1 {
+  background-color: rgba(224, 44, 109, 1);
+  padding: 10px 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+header h1:hover {
+  transform: scale(120%);
+  transition: 3s;
+  color: lightgoldenrodyellow;
+}
+a:hover {
+  background-image: linear-gradient(rgb(0, 183, 255), rgb(0, 255, 191));
+}
+/* ---------------------------
+main
+--------------------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -----Main-section1------- */
+.main-div1 {
+  width: 88%;
+  padding: 2%;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  margin: 13.5px 15px;
+}
+.main-div1 img {
+  width: 90%;
+  height: 256px;
+}
+.main-div1 h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.main-div1 p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.main-grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-section1 {
+  width: 100%;
+}
+
+/* -----main-section2------- */
+
+.div-margin12 {
+  width: 300px;
+  height: 100%;
+  margin: 5%;
+}
+.imgset1 {
+  width: 300px;
+  height: 400px;
+}
+.main-section2 h1 {
+  font-size: 48px;
+  margin-right: 20px;
+}
+.main-section2 p {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+.main-section2 {
+  width: 98%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+.div-margin1 {
+  width: 300x;
+  height: 400px;
+  padding-right: 10px;
+}
+/* ---------------------------
+Photo Gallery Section
+--------------------------- */
+.photo-frame {
+  height: 300px;
+  width: 300px;
+  /* border: rgba(45, 137, 160, 0.274) solid 2px; */
+  border-radius: 20px;
+  position: relative;
+  margin: 15px;
+}
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+h3 {
+  text-align: center;
+}
+.photo-detail {
+  position: absolute;
+  top: 0;
+  display: none;
+  height: 155px;
+  width: 248px;
+  border: rgba(45, 137, 160, 0.274) solid 2px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  padding: 25px;
+  text-align: justify;
+}
+
+.photo-frame:hover .photo-detail {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+.photo-album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* ---------------------------
+Subscribe Section
+--------------------------- */
+.sub-section1 {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sub-section1 p {
+  font-weight: 600;
+  font-size: 30px;
+}
+.sub-section1 input {
+  border-radius: 10px;
+  color: rgb(40, 108, 255);
+  font-size: 25px;
+}
+.sub-section1 button {
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  background-color: rgb(255, 0, 0);
+}
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(rgb(40, 79, 206), rgb(225, 0, 255));
+}
+/* ---------------------------
+footer
+--------------------------- */
+.icon1 {
+  height: 32px;
+  width: 32px;
+  color: rgba(150, 155, 171, 1);
+}
+footer img {
+  width: 483.87px;
+  height: 110px;
+}
+footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer {
+  margin-top: 10px;
+}
+
+/* ---------------------------
+media query
+--------------------------- */
+
+/* ---------------------------
+Mobile
+--------------------------- */
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 36px;
+  }
+  .head-div1 img {
+    /* width: 100%;
+        height: 230px; */
+    width: 329px;
+    height: 259.17px;
+  }
+  .main-grid1 {
+    grid-template-columns: repeat(1, 1fr);
+    /* -----optional-flex-method----- */
+    /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+  }
+  .main-div1 {
+    width: 98%;
+    padding: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    margin: 10px 0;
+  }
+  /* -----main-section2 {Iphone-X}------- */
+
+  .div-margin12 {
+    width: 300px;
+    height: 100%;
+    margin: 5%;
+    margin-top: 15%;
+  }
+  .main-section2 h1 {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .main-section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  /* --------------------------- */
+  .head-div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+  .head-margin1 {
+    margin-bottom: 30px;
+  }
+  .img-control1 {
+    margin: 15px 50px;
+  }
+  .photo-album {
+    flex-direction: column;
+  }
+  .sub-section1 p {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  footer img {
+    width: 170px;
+    height: 65px;
+  }
+}
+/* TAblet */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 36px;
+  }
+  .head-div1 img {
+    width: 100%;
+    height: 230px;
+  }
+
+  .main-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-div1 {
+    width: 90%;
+    padding: 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    margin: 10px 10px;
+  }
+  .main-section1 {
+    width: 100%;
+  }
+  .div-margin1 {
+    margin-bottom: 30px;
+  }
+  .head-margin1 {
+    margin-bottom: 30px;
+  }
+  .img-control1 {
+    margin: 15px 50px;
+  }
+  /* -----main-section2 {Ipad}------- */
+
+  .main-section2 h1 {
+    font-size: 38px;
+  }
+  .main-section2 {
+    width: 98%;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}
